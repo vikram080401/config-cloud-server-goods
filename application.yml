@@ -13,7 +13,7 @@ microservice:
       endpoint:
         uri: CUSTOMER-SERVICE
       operation: 
-        uri: customer/order
+        uri: customer/addcustomer
   shipping-service:
     endpoints:
       endpoint:
