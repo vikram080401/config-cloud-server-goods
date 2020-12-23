@@ -8,17 +8,6 @@ eureka:
     hostname: localhost
 
 microservice:
-  customer-service:
+  zuul-api:
     endpoints:
-      endpoint:
-        uri: CUSTOMER-SERVICE
-      add: 
-        uri: customer/addcustomer
-      view:
-        uri: customer/view
-  order-service:
-    endpoints:
-      endpoint:
-        uri: ORDER-SERVICE
-      operation:
-        uri: shipping/shipOrder
+      uri: http://localhost:8765/
